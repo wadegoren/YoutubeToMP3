@@ -1,4 +1,4 @@
-# Red Hot Chili Peppers Live Concert Tracks
+# Live Concert Video Splitting
 
 This Python script downloads a live concert video from YouTube using `pytube`, extracts the audio, and splits it into individual tracks based on predefined timestamps.
 
