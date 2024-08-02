@@ -42,36 +42,35 @@ def main(youtube_url, segments, output_path):
     os.remove(mp3_file)
 
 if __name__ == "__main__":
-    youtube_url = "https://www.youtube.com/watch?v=abKcWjFMgsE&t=28s&ab_channel=ToshiAizawa"
+    youtube_url = "https://www.youtube.com/watch?v=ay81SRjcq7w&t=2474s&ab_channel=ToshiAizawa"
     output_path = "C:\\Users\\wadeg\\ChiliPeppers\\RHCP_tracks"
     os.makedirs(output_path, exist_ok=True)
 
     # Define the segments with titles, start times, and end times
     tracks = [
-        {"title": "SE: Amerique", "start_time": "0:00:00", "end_time": "0:00:22"},
-        {"title": "Intro Jam", "start_time": "0:00:22", "end_time": "0:04:57"},
-        {"title": "Can't Stop", "start_time": "0:04:57", "end_time": "0:10:24"},
-        {"title": "Scar Tissue", "start_time": "0:10:24", "end_time": "0:15:15"},
-        {"title": "Here Ever After", "start_time": "0:15:15", "end_time": "0:19:55"},
-        {"title": "Snow (Hey Oh)", "start_time": "0:19:55", "end_time": "0:27:41"},
-        {"title": "Parallel Universe", "start_time": "0:27:41", "end_time": "0:34:28"},
-        {"title": "Eddie", "start_time": "0:34:28", "end_time": "0:41:05"},
-        {"title": "I Like Dirt", "start_time": "0:41:05", "end_time": "0:43:42"},
-        {"title": "Soul To Squeeze Jam", "start_time": "0:43:42", "end_time": "0:44:44"},
-        {"title": "Soul To Squeeze", "start_time": "0:44:44", "end_time": "0:50:42"},
-        {"title": "Me & My Friends", "start_time": "0:50:42", "end_time": "0:53:34"},
-        {"title": "Jam", "start_time": "0:53:34", "end_time": "0:55:10"},
-        {"title": "Havana Affair", "start_time": "0:55:10", "end_time": "0:57:45"},
-        {"title": "Soul Love", "start_time": "0:57:45", "end_time": "0:59:07"},
-        {"title": "Tell Me Baby", "start_time": "0:59:07", "end_time": "1:03:51"},
-        {"title": "The Heavy Wing", "start_time": "1:03:51", "end_time": "1:09:33"},
-        {"title": "Californication Jam", "start_time": "1:09:33", "end_time": "1:13:58"},
-        {"title": "Californication", "start_time": "1:13:58", "end_time": "1:19:33"},
-        {"title": "Black Summer Jam", "start_time": "1:19:33", "end_time": "1:20:28"},
-        {"title": "Black Summer", "start_time": "1:20:28", "end_time": "1:25:04"},
-        {"title": "By The Way", "start_time": "1:25:04", "end_time": "1:31:45"},
-        {"title": "I Could Have Lied", "start_time": "1:31:45", "end_time": "1:36:25"},
-        {"title": "Give It Away", "start_time": "1:36:25", "end_time": "1:40:00"}
-    ]
+    {"title": "Intro Jam", "start_time": "0:00:17", "end_time": "0:05:36"},
+    {"title": "Around The World", "start_time": "0:05:36", "end_time": "0:10:17"},
+    {"title": "Dani California", "start_time": "0:10:17", "end_time": "0:15:44"},
+    {"title": "The Zephyr Song", "start_time": "0:15:44", "end_time": "0:20:35"},
+    {"title": "Aquatic Mouth Dance", "start_time": "0:20:35", "end_time": "0:25:48"},
+    {"title": "Danny's Song", "start_time": "0:25:48", "end_time": "0:27:17"},
+    {"title": "Otherside", "start_time": "0:27:17", "end_time": "0:32:40"},
+    {"title": "Eddie", "start_time": "0:32:40", "end_time": "0:39:36"},
+    {"title": "Right On Time", "start_time": "0:39:36", "end_time": "0:42:26"},
+    {"title": "Strip My Mind", "start_time": "0:42:26", "end_time": "0:47:14"},
+    {"title": "Tippa My Tongue", "start_time": "0:47:14", "end_time": "0:51:56"},
+    {"title": "Throw Away Your Television", "start_time": "0:51:56", "end_time": "0:56:46"},
+    {"title": "Hard To Concentrate", "start_time": "0:56:46", "end_time": "1:01:26"},
+    {"title": "Suck My Kiss", "start_time": "1:01:26", "end_time": "1:05:23"},
+    {"title": "Californication Jam", "start_time": "1:05:23", "end_time": "1:08:52"},
+    {"title": "Californication", "start_time": "1:08:52", "end_time": "1:14:37"},
+    {"title": "Black Summer Jam", "start_time": "1:14:37", "end_time": "1:15:27"},
+    {"title": "Black Summer", "start_time": "1:15:27", "end_time": "1:20:14"},
+    {"title": "By The Way", "start_time": "1:20:14", "end_time": "1:23:58"},
+    {"title": "Encore Break", "start_time": "1:23:58", "end_time": "1:26:30"},
+    {"title": "Encore", "start_time": "1:26:30", "end_time": "1:26:51"},
+    {"title": "Under The Bridge", "start_time": "1:26:51", "end_time": "1:31:33"},
+    {"title": "Give It Away", "start_time": "1:31:33", "end_time": "1:36:25"},
+]
 
     main(youtube_url, tracks, output_path)
