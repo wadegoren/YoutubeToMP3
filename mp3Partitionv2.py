@@ -44,7 +44,6 @@ def main(youtube_url, segments, output_path):
 if __name__ == "__main__":
     youtube_url = "https://www.youtube.com/watch?v=ay81SRjcq7w&t=2474s&ab_channel=ToshiAizawa"
     output_path = "C:\\Users\\wadeg\\ChiliPeppers\\RHCP_tracks"
-    os.makedirs(output_path, exist_ok=True)
 
     # Define the segments with titles, start times, and end times
     tracks = [

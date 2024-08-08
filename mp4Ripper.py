@@ -4,7 +4,7 @@ import moviepy.editor as mp
 def download_youtube_video(youtube_url, output_path):
     ydl_opts = {
         'format': 'bestvideo+bestaudio/best',
-        'outtmpl': f'{output_path}/%(title)s.%(ext)s',
+        'outtmpl': f'{output_path}/rhcptoronto.%(ext)s',
         'merge_output_format': 'mp4'
     }
     
@@ -22,9 +22,8 @@ def main():
     print("Downloading video...")
     download_youtube_video(youtube_url, output_path)
     
-    # Get the downloaded file name
-    input_filename = f"{output_path}/{yt_dlp.YoutubeDL().extract_info(youtube_url, download=False)['title']}.mp4"
-    output_filename = f"{output_path}/converted_{yt_dlp.YoutubeDL().extract_info(youtube_url, download=False)['title']}.mp4"
+    input_filename = f"{output_path}/rhcptoronto.mp4"
+    output_filename = f"{output_path}/converted_rhcptoronto.mp4"
     
     print("Converting video to compatible format...")
     convert_to_compatible_format(input_filename, output_filename)
